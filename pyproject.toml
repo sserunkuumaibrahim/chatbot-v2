@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "chatbot-v2"
+version = "0.1.0"
+description = ""
+authors = ["sserunkuumaibrahim <77914914+sserunkuumaibrahim@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
+sqlalchemy = "^2.0.36"
+alembic = "^1.13.3"
+psycopg2-binary = "^2.9.10"
+pydantic = "^2.9.2"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.17"
+redis = "^5.2.0"
+celery = "^5.4.0"
+pymongo = "^4.10.1"
+elasticsearch = "^8.15.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+flake8 = "^7.1.1"
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+pre-commit = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
